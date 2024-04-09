@@ -1,14 +1,79 @@
 body{
-    background-color: darkmagenta;
-    color: #fff;
+    background-color: rgb(191,191,191);
+    font-family: "Playpen Sans", cursive;
 }
 
-img{
-    width: 20%;
+header{
+    background-color: rgb(77,139,195);        
+}
 
+/* Classe Atribuída para a div que vai receber o logotipo */
+.logo{
+    background-color: rgb(255,255,0);
+}
+
+nav{
+    background-color: rgb(184,209,231);    
+}
+
+main{
+    background-color: rgb(146,208,80);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+section{
+    background-color: rgb(241,214,226);    
+}
+
+footer{
+    background-color: rgb(112,48,160);       
+}
+
+.cabecalho{
+    padding: 3%;
+}
+.rodape{
+    padding: 3%;
+}
+
+.titulos{
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+ul li{
+    line-height: 1.5;
+    font-size: 1.2em;
 }
 
 h1{
-    color: aqua;
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+td,th{
+    border: 5px dashed #f00;
+    padding: 1.5%;
+}
+
+/* essa faz uma linha cor sim cor não */
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
