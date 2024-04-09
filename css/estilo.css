@@ -1,5 +1,16 @@
+/*
+Paleta de cores do mais claro para o mais escuro
+#00216f
+#0b3081
+#005ef8
+#0050e5
+#0041d2
+#0033be
+#0024ab
+*/
+
 body{
-    background-color: rgb(191,191,191);
+    background-image: url(../img/fundotudo.avif);
     font-family: "Playpen Sans", cursive;
 }
 
@@ -17,14 +28,16 @@ nav{
 }
 
 main{
-    background-color: rgb(146,208,80);
+    background-color: #0b3081;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto; 
+    padding: 1%;   
+    color: #fff;
 }
 
 section{
-    background-color: rgb(241,214,226);    
+        
 }
 
 footer{
@@ -47,6 +60,8 @@ footer{
 p{
     line-height: 1.5;
     font-size: 1.2em;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 ul li{
     line-height: 1.5;
@@ -75,5 +90,13 @@ td,th{
 /* essa faz uma linha cor sim cor não */
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+figure{
+   text-align: center;
+}
+
+legend{
+    margin-top:  0.6%;
 }
 
