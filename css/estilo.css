@@ -10,8 +10,8 @@ Paleta de cores do mais claro para o mais escuro
 */
 
 body{
-    background-image: url(../img/fundotudo.avif);
-    font-family: "Playpen Sans", cursive;
+    background-image: url("../img/fundotudo.avif");
+    back
 }
 
 header{
@@ -20,11 +20,11 @@ header{
 
 /* Classe Atribuída para a div que vai receber o logotipo */
 .logo{
-    background-color: rgb(255,255,0);
+    
 }
 
 nav{
-    background-color: rgb(184,209,231);    
+       
 }
 
 main{
@@ -40,6 +40,10 @@ section{
         
 }
 
+.logotopo{
+    width: 10%;
+}
+
 footer{
     background-color: rgb(112,48,160);       
 }
@@ -52,12 +56,18 @@ footer{
 }
 
 .titulos{
+    font-family: "Salsa", cursive;
     line-height: 3;
     text-align: center;
     font-weight: bold;
 }
 
+p,li,table{
+    font-family: "Handlee", cursive;
+}
+
 p{
+    
     line-height: 1.5;
     font-size: 1.2em;
     padding-top: 0.5%;
