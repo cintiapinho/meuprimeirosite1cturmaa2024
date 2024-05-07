@@ -11,7 +11,6 @@ Paleta de cores do mais claro para o mais escuro
 
 body{
     background-image: url("../img/fundotudo.avif");
-    back
 }
 
 header{
@@ -19,13 +18,7 @@ header{
 }
 
 /* Classe Atribuída para a div que vai receber o logotipo */
-.logo{
-    
-}
 
-nav{
-       
-}
 
 main{
     background-color: #0b3081;
@@ -36,9 +29,6 @@ main{
     color: #fff;
 }
 
-section{
-        
-}
 
 .logotopo{
     width: 10%;
@@ -108,5 +98,22 @@ figure{
 
 legend{
     margin-top:  0.6%;
+}
+
+.imgmeio{
+    width: 80%;
+}
+
+.imggaleria{
+    width: 100%;
+}
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-3{
+    width: 25%;
 }
 
