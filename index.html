@@ -96,59 +96,81 @@
                     </div>
                     <p>Tradutor</p>
                 </div>
-            </div>    
-            <h2>Como Criar um projeto em PLN - Passos a seguir</h2>   
-            <p>Para criar um projeto com PLN é necessário pensardesde a identificação do problema até a estruturação de uma base de dados.</p>  
-            <h3>Identificação do Problema</h3>
-            <p>O primeiro passo para iniciar um projeto de PLN é identificar o problema que se deseja resolver. Isso pode variar desde a análise de sentimentos em avaliações de produtos até a categorização de e-mails em uma caixa de entrada. É crucial definir claramente o escopo do problema e os objetivos que se deseja alcançar com a aplicação de PLN.</p>
-            <h3>Coleta de Dados</h3>
-            <p>Com o problema definido, o próximo passo é coletar os dados necessários para treinar o modelo de PLN. Isso pode envolver a obtenção de textos de fontes diversas, como redes sociais, sites de notícias ou bases de dados específicas. É importante garantir que os dados coletados sejam representativos do problema em questão e que estejam devidamente etiquetados, se necessário.</p>
-            <h4>Exmplos de como os dados podem ser coletados</h4>
-            <h5>Redes Sociais</h5>
-            <ul>
-                <li>Coletar posts e comentários de plataformas como Twitter, Facebook, ou Instagram.</li>
-                <li>Utilizar APIs de redes sociais para extrair publicações com hashtags específicas relacionadas aos produtos ou serviços de interesse.</li>
-                <li>Exemplo: Extrair tweets contendo hashtags como #FelizComMeuNovoProduto ou #OdiávelServiçoAoCliente.</li>
-                
-            </ul>
-             <h5>Avaliações de Produtos e Serviços</h5>
-            <ul>
-                <li>Scraping de sites de avaliações como Amazon, Yelp, ou TripAdvisor.</li>
-                <li>Extrair comentários e avaliações de produtos e serviços, focando em aspectos emocionais.</li>
-                <li>Exemplo: Coletar avaliações de produtos da Amazon e extrair os comentários para análise de sentimentos.</li>
-               
-            </ul>
-            <h5>Questionários Online</h5>
-            <ul>
-                <li>Criar questionários online que solicitem aos participantes que descrevam suas experiências e sentimentos sobre determinados produtos ou serviços.</li>
-                <li>Coletar respostas abertas que expressem opiniões e emoções dos participantes.</li>
-                <li>Exemplo: Criar um questionário no Google Forms pedindo aos participantes para descrever como se sentiram após uma experiência de compra online.</li>
-               
-            </ul>
-            <h5>Registros de Sistemas Internos</h5>
-            <ul>
-                <li>Extrair dados de sistemas internos da empresa que registram atividades e processos.</li>
-                <li>Coletar informações sobre diferentes etapas dos processos, como registros de consultas médicas, transações financeiras, ou movimentações logísticas.</li>
-                <li>Exemplo: Extrair dados de um sistema de gestão hospitalar para obter registros de consultas médicas.</li>               
-            </ul>
-            <h5>Base de Dados Públicas ou Governamentais</h5>
-            <ul>
-                <li>Acessar bases de dados públicas ou governamentais que contenham informações sobre processos específicos.</li>
-                <li>Coletar dados sobre processos jurídicos, registros financeiros, ou licitações governamentais.</li>
-                <li>Exemplo: Acessar uma base de dados do sistema judicial para coletar informações sobre processos legais e suas categorias.</li>               
-            </ul>
-            <h3>Estruturação da Base de Dados</h3>
-            <p>Uma vez que os dados tenham sido coletados, é necessário estruturá-los de forma adequada para alimentar o modelo de PLN. Isso pode envolver a limpeza e pré-processamento dos textos, removendo stopwords, pontuações e caracteres especiais, além de realizar a tokenização e a lematização. Em seguida, os dados devem ser divididos em conjuntos de treinamento, validação e teste para avaliar a performance do modelo.</p>
-            <p>Base de Dados para Classificação de Sentimentos</p>
-            <figure>
-                <img src="img/basesenti.PNG" alt="">                
-            </figure>
-            <p>Base de Dados para Classificação de Processos</p>
-            <figure>
-                <img src="img/baseprocessos.PNG" alt="">
-            </figure>
-            <h2></h2>
-            <p></p>
+            </div>  
+            
+                <h2 class="titulos">Como Criar um projeto em PLN - Passos a seguir</h2>   
+                <p>Para criar um projeto com PLN é necessário pensardesde a identificação do problema até a estruturação de uma base de dados.</p>  
+                <h3 class="titulos">Identificação do Problema</h3>
+                <p>O primeiro passo para iniciar um projeto de PLN é identificar o problema que se deseja resolver. Isso pode variar desde a análise de sentimentos em avaliações de produtos até a categorização de e-mails em uma caixa de entrada. É crucial definir claramente o escopo do problema e os objetivos que se deseja alcançar com a aplicação de PLN.</p>
+                <h3 class="titulos">Coleta de Dados</h3>
+                <p>Com o problema definido, o próximo passo é coletar os dados necessários para treinar o modelo de PLN. Isso pode envolver a obtenção de textos de fontes diversas, como redes sociais, sites de notícias ou bases de dados específicas. É importante garantir que os dados coletados sejam representativos do problema em questão e que estejam devidamente etiquetados, se necessário.</p>
+                <h4 class="titulos">Exemplos de como os dados podem ser coletados</h4>
+                <div class="cards"> 
+                    <div class="card">
+                        <h5 class="titulos" >Redes Sociais</h5>
+                        <ul>
+                            <li>Coletar posts e comentários de plataformas como Twitter, Facebook, ou Instagram.</li>
+                            <li>Utilizar APIs de redes sociais para extrair publicações com hashtags específicas relacionadas aos produtos ou serviços de interesse.</li>
+                            <li>Exemplo: Extrair tweets contendo hashtags como #FelizComMeuNovoProduto ou #OdiávelServiçoAoCliente.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h5 class="titulos" >Avaliações de Produtos e Serviços</h5>
+                        <ul>
+                            <li>Scraping de sites de avaliações como Amazon, Yelp, ou TripAdvisor.</li>
+                            <li>Extrair comentários e avaliações de produtos e serviços, focando em aspectos emocionais.</li>
+                            <li>Exemplo: Coletar avaliações de produtos da Amazon e extrair os comentários para análise de sentimentos.</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="card">    
+                        <h5 class="titulos" >Questionários Online</h5>
+                        <ul>
+                            <li>Criar questionários online que solicitem aos participantes que descrevam suas experiências e sentimentos sobre determinados produtos ou serviços.</li>
+                            <li>Coletar respostas abertas que expressem opiniões e emoções dos participantes.</li>
+                            <li>Exemplo: Criar um questionário no Google Forms pedindo aos participantes para descrever como se sentiram após uma experiência de compra online.</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="card"> 
+                        <h5 class="titulos">Registros de Sistemas Internos</h5>
+                        <ul>
+                            <li>Extrair dados de sistemas internos da empresa que registram atividades e processos.</li>
+                            <li>Coletar informações sobre diferentes etapas dos processos, como registros de consultas médicas, transações financeiras, ou movimentações logísticas.</li>
+                            <li>Exemplo: Extrair dados de um sistema de gestão hospitalar para obter registros de consultas médicas.</li>               
+                        </ul>
+                    </div>
+                    <div class="card"> 
+                        <h5 class="titulos">Base de Dados Públicas ou Governamentais</h5>
+                        <ul>
+                            <li>Acessar bases de dados públicas ou governamentais que contenham informações sobre processos específicos.</li>
+                            <li>Coletar dados sobre processos jurídicos, registros financeiros, ou licitações governamentais.</li>
+                            <li>Exemplo: Acessar uma base de dados do sistema judicial para coletar informações sobre processos legais e suas categorias.</li>               
+                        </ul>
+                    </div>
+                    <div class="card"> 
+                        <h5 class="titulos">Outra forma</h5>
+                        <ul>
+                            <li>Acessar bases de dados públicas ou governamentais que contenham informações sobre processos específicos.</li>
+                            <li>Coletar dados sobre processos jurídicos, registros financeiros, ou licitações governamentais.</li>
+                            <li>Exemplo: Acessar uma base de dados do sistema judicial para coletar informações sobre processos legais e suas categorias.</li>               
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="titulos">Estruturação da Base de Dados</h3>
+                <p>Uma vez que os dados tenham sido coletados, é necessário estruturá-los de forma adequada para alimentar o modelo de PLN. Isso pode envolver a limpeza e pré-processamento dos textos, removendo stopwords, pontuações e caracteres especiais, além de realizar a tokenização e a lematização. Em seguida, os dados devem ser divididos em conjuntos de treinamento, validação e teste para avaliar a performance do modelo.</p>
+                <p>Base de Dados para Classificação de Sentimentos</p>
+                <figure>
+                    <img  class="imgmeio" src="img/basesenti.PNG" alt="">                
+                </figure>
+                <p>Base de Dados para Classificação de Processos</p>
+                <figure>
+                    <img  class="imgmeio" src="img/baseprocessos.PNG" alt="">
+                </figure>
+                <h2></h2>
+                <p></p>
+            </div> 
         </section>
         <section>
             <h2 class="titulos">teste</h2>
