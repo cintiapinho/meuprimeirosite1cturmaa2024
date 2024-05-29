@@ -115,7 +115,7 @@ legend{
     width: 90%;
 }
 
-.linha, {
+.linha, .row  {
     display: flex;
     flex-flow: row wrap;
 }
@@ -129,7 +129,7 @@ legend{
     text-align: center;
 }
 
-.cards, .row {
+.cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -147,11 +147,15 @@ legend{
     width: 50%;
 }
 
+.centro{
+    text-align: center;
+}
+
 @media screen and (max-width: 800px) {
     .card {
         width: calc(50% - 20px); /* 2 cards por linha em telas médias */
     }
-    col-6{
+    .col-6{
         width: 100%;
     }
 }
