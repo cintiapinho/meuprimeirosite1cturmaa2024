@@ -9,33 +9,51 @@ Paleta de cores do mais claro para o mais escuro
 #0024ab
 */
 
+.color-1 { background-color: rgb(65, 105, 225); }
+.color-2 { background-color: rgb(78, 65, 225); }
+.color-3 { background-color: rgb(65, 158, 225); }
+.color-4 { background-color: rgb(132, 65, 225); }
+.color-5 { background-color: rgb(65, 212, 225); }
+
 body{
-    background-image: url("../img/fundotudo.avif");
+    background-image: url("../img/fundo.jpg");
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-position: center; /* Centraliza a imagem no corpo */
+    color: black;
+    font-weight: bold;
+    
 }
 
-header{
-    background-color: rgb(77,139,195);        
+header, footer{
+    background-color:  rgb(65, 105, 225, 0.4);       
 }
 
 /* Classe Atribuída para a div que vai receber o logotipo */
 
 
-main{
-    background-color: #0b3081;
+main{    
     width: 80%;
     margin-left: auto;
     margin-right: auto; 
     padding: 1%;   
-    color: #fff;
+    
 }
 
+section{
+    padding: 1%;
+}
+
+section:nth-child(even) {
+    background-color:  rgb(65, 212, 225, 0.3);  /* Define a cor de fundo para seções pares */    
+}
+
+section:nth-child(odd) {
+    background-color: rgb(65, 212, 225, 0.6);  /* Define a cor de fundo para seções ímpares */
+}
 
 .logotopo{
     width: 10%;
-}
-
-footer{
-    background-color: rgb(112,48,160);       
 }
 
 .cabecalho{
@@ -108,7 +126,7 @@ legend{
 }
 
 .imgmeio{
-    width: 80%;
+    width: 50%;
 }
 
 .imggaleria{
@@ -138,7 +156,7 @@ legend{
 .card {
     width: calc(33.33% - 20px); /* 3 cards por linha, os 20px é o espaço de margem entre eles */
     margin-bottom: 20px;
-    background-color: #005ef8; 
+    background-color: rgb(65, 105, 225, 0.4);
     padding: 20px;
     box-sizing: border-box;
 }
