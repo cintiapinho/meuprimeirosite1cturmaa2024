@@ -15,6 +15,10 @@ Paleta de cores do mais claro para o mais escuro
 .color-4 { background-color: rgb(132, 65, 225); }
 .color-5 { background-color: rgb(65, 212, 225); }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url("../img/fundo.jpg");
     background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
@@ -25,17 +29,18 @@ body{
 }
 
 header{
-    padding: 3%;
+    padding: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-between;   
-    background-color: rgb(65, 105, 225, 0.4);
+    background-color: rgb(65, 105, 225, 1);
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -56,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black ;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -69,7 +74,7 @@ nav ul li a:hover {
 
 .menu-icon {
     display: none;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
 }
@@ -93,6 +98,12 @@ main{
 
 section{
     padding: 1%;
+   
+}
+
+#sobre{
+    scroll-margin-top: 20%; /* Espaço superior para ajustar a ancoragem */
+
 }
 
 section:nth-child(even) {
@@ -113,6 +124,7 @@ section:nth-child(odd) {
 }
 .rodape{
     padding: 3%;
+    text-align: center;
 }
 
 .titulos{
