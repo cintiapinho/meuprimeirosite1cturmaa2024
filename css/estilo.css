@@ -29,7 +29,7 @@ body{
 }
 
 header{
-    padding: 2%;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,8 +40,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;   
-    background-color: rgb(65, 105, 225, 1);
-    padding: 10px 20px;
+    background-color: rgb(65, 158, 225, 0.9);
     position: fixed;
     top: 0;
     width: 100%;
@@ -119,9 +118,7 @@ section:nth-child(odd) {
     /* width: 15%; */
 }
 
-.cabecalho{
-    padding: 3%;
-}
+
 .rodape{
     padding: 3%;
     text-align: center;
