@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Salsa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
+   
+    
     <link rel="stylesheet" href="estilo.css">    
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">   
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
+   
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho" id="cabecalho">
         <div class="logo">
             <img class="logotopo" src="img/logozinho.png" alt="">
         </div>
@@ -22,16 +24,19 @@
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul>
-                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">Sobre</a></li>
-                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">Estrutura</a></li>
-                <li><a href="#" onclick="document.getElementById('menu-toggle').click()">Detalhes</a></li>
-                <li><a href="cssinline_interno.html" onclick="document.getElementById('menu-toggle').click()">Exemplos</a></li>
+                <ul>
+                    <li><a href="#sobre" onclick="document.getElementById('menu-toggle').click()">Sobre</a></li>
+                    <li><a href="#comp" onclick="document.getElementById('menu-toggle').click()">Estrutura</a></li>
+                    <li><a href="#pnl" onclick="document.getElementById('menu-toggle').click()">PNL</a></li>
+                    <li><a href="contato.html" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
+                </ul>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="titulos">Introdução à Inteligência Artificial</h1>                 
-        <section>
+                    
+        <section id="sobre">
+              
             <h2 class="titulos">O que é o Inteligência Artificial?</h2>
 
             <p> 
@@ -48,7 +53,7 @@
                 Ela envolve a criação de algoritmos e modelos que permitem que as máquinas processem informações, aprendam com dados, tomem decisões, resolvam problemas e interajam com o ambiente de maneira inteligente.  Fonte: (Lemos, 2023) - Revista Exame
             </p>           
         </section>
-        <section>
+        <section id="comp" >
             <h2 class="titulos">Componentes Importantes da IA</h2>
             <p>
                 Este diagrama mostra ma visão geral sobre o tema pode ser visualizada com este primeiro diagrama que mostra a Relação entre a Inteligência Artificial, Aprendizado de Máquina, Aprendizagem Profunda e Processamento de Linguagem Natural.
@@ -58,7 +63,7 @@
                 <legend><a href="https://marcoarmello.wordpress.com/2020/08/19/coronavirus6/"> Fonte: RENATA MUYLAERT </a> </legend>
             </figure>                 
         </section>
-        <section>
+        <section id="pnl">
            <h2 class="titulos">Processamento de Linguagem Natural</h2>
             <p>
                 O processamento de linguagem natural (Natural Processing Language - NLP)  pode ser considerado uma subárea da inteligência artificial (IA), combina computação, linguística e até filosofia da linguagem para estudar como fazer computadores entenderem a linguagem natural humana. Assim, trata-se de um conjunto de técnicas que ajudam as máquinas a processarem textos e falas, a fim de decodificar o seu significado e seu contexto. ​
@@ -170,80 +175,27 @@
                     </div>
                 </div>  
             </div> 
-        </section>
-        <section>
-            <h2 class="titulos">teste</h2>
-            
-            <!-- <table>
-                <tr>
-                    <th>2021</th>
-                    <th>2020</th>
-                    <th>Linguagem</th>
-                    <th>Avaliações</th>
-                    <th>Modulação</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>C</td>
-                    <td>12,57%</td>
-                    <td>-4,41%</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>Python</td>
-                    <td>11,86%</td>
-                    <td>+2,17%</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>Java</td>
-                    <td>10,43%</td>
-                    <td>-4,00%</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>C++</td>
-                    <td>7,36%</td>
-                    <td>+0,52%</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>C#</td>
-                    <td>5,14%</td>
-                    <td>+0,46%</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>Visual Basic</td>
-                    <td>4,67%</td>
-                    <td>+0,01%</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>Javascript</td>
-                    <td>2,95%</td>
-                    <td>+0,07%</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>PHP</td>
-                    <td>2,19%</td>
-                    <td>-0,05%</td>
-                </tr>
-            </table> -->
-        </section>         
+        </section>             
     </main>
     <footer class="rodape">
         <p>Rodapé da Página</p>        
     </footer>    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const headerHeight = document.getElementById('cabecalho').offsetHeight;
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 
