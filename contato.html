@@ -29,12 +29,78 @@
     </header>
     <main>
         <h1 class="titulos">Contato</h1>                 
-        <section id="sobre">
+        <section id="cont">
+            <form id="contactForm">
+                <div>
+                        <div class="form-group">
+                            <label for="fname">Nome</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Seu Nome" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(XX) XXXX-XXXX">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="dob">Data de Nascimento:</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="age">Idade:</label>
+                            <input type="number" id="age" name="age" min="1" max="120" placeholder="Sua Idade">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="country">Maior Interesse:</label>
+                            <select id="country" name="country">
+                                <option value="dados">Ciências de Dados</option>
+                                <option value="machine_learning">Machine Learning</option>
+                                <option value="nlp">Processamento de Linguagem Natural</option>
+                                <option value="vision">Visão Computacional</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group checkbox-group">
+                            <h2>Áreas de Interesse</h2>
+
+                            <input type="checkbox" id="interest1" name="interests" value="dados">
+                            <label for="interest1">Ciências de Dados</label><br>
+                            <input type="checkbox" id="interest2" name="interests" value="machine_learning">
+                            <label for="interest2">Machine Learning</label><br>
+                            <input type="checkbox" id="interest3" name="interests" value="nlp">
+                            <label for="interest3">Processamento de Linguagem Natural</label><br>
+                            <input type="checkbox" id="interest4" name="interests" value="vision">
+                            <label for="interest4">Visão Computacional</label>
+                        </div>
+        
+                        <div class="form-group radio-group">
+                            <h2>Contato Preferido</h2>
+                            
+                            <input type="radio" id="contactEmail" name="contact_type" value="email">
+                            <label for="contactEmail">E-mail</label><br>
+                            <input type="radio" id="contactPhone" name="contact_type" value="phone">
+                            <label for="contactPhone">Telefone</label>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="profile_picture">Envie uma Imagem de Perfil:</label>
+                            <input type="file" id="profile_picture" name="profile_picture" accept="image/*">
+                        </div>
+        
+                        <div class="form-group">                           
+                            <textarea id="comments" name="comments" rows="4" placeholder="Deixe seus comentários aqui..."></textarea>
+                        </div>
+                </div>   
+            </form>    
           
-        </section>
-        <section id="comp" >
-            
-          
+        </section> 
     </main>
     <footer class="rodape">
         <p>Rodapé da Página</p>        
